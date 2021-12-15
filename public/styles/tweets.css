@@ -1,0 +1,44 @@
+.tweets-article {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  margin-top: 30px;
+}
+
+.tweets-header {
+  display: flex;
+  justify-content: space-between;
+  border-color: black;
+}
+
+.tweets-header-top {
+  display: flex;
+}
+
+main > article {
+  width: auto;
+  background-color: red;
+}
+
+.tweets-img {
+  max-width: 25%;
+  margin-right: 30px;
+  height:auto;
+}
+
+.tweet-inner-border {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+}
+
+.tweet-footer{
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-icons:hover {
+  color:  yellow;
+}
+

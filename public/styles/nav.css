@@ -3,16 +3,18 @@ nav {
   width: auto;
   background-color: #4056A1;
   color: #FFFFFF;
-  z-index: 2;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;  
 }
 
 nav span {
   font-family: "Bungee", "sans-serif";
-  margin-left: 1.5em; 
-  margin-right: 1.5em; 
+  margin: 0 1.5em 0 1.5em;
 }
 
-div {
+nav > div {
   height: 120px;
 }
 
@@ -20,7 +22,6 @@ div {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .nav-sub-contaner {
@@ -28,5 +29,4 @@ div {
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  flex-wrap: wrap;
 }

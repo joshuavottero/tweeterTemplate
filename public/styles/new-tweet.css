@@ -1,5 +1,6 @@
 .new-tweet {
-  text-align: center;
+  padding: 5px 0;
+  width: 100%;
 }
 
 .new-tweet-footer {
@@ -7,14 +8,25 @@
   justify-content: space-between;
   border-top-color: black;
   border-top-style: solid;
- 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  margin: 0 20px;
+}
+
+form textarea {
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 .new-tweet-button {
   background-color: darkblue;
   font-family: "Bungee", "sans-serif";
   color: white;
-  margin-top: 5px;
+  /*/margin-top: 5px;*/
 }
 
 .redText {
