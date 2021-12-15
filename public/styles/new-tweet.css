@@ -1,0 +1,23 @@
+.new-tweet {
+  text-align: center;
+}
+
+.new-tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top-color: black;
+  border-top-style: solid;
+ 
+}
+
+.new-tweet-button {
+  background-color: darkblue;
+  font-family: "Bungee", "sans-serif";
+  color: white;
+  margin-top: 5px;
+}
+
+.redText {
+  color: red;
+}
+

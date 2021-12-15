@@ -1,0 +1,32 @@
+nav {
+  height: 120px;
+  width: auto;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+nav span {
+  font-family: "Bungee", "sans-serif";
+  margin-left: 1.5em; 
+  margin-right: 1.5em; 
+}
+
+div {
+  height: 120px;
+}
+
+.nav-contaner {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-sub-contaner {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+}
