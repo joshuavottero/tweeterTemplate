@@ -21,8 +21,9 @@ main > article {
 }
 
 .tweets-img {
-  max-width: 25%;
-  margin-right: 30px;
+  margin: 20px;
+  width: 25%;
+  height: 25%;
   height:auto;
 }
 
@@ -30,15 +31,20 @@ main > article {
   border-bottom-color: black;
   border-bottom-style: solid;
   padding-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 .tweet-footer{
-  
   display: flex;
   justify-content: space-between;
 }
 
 .tweet-icons:hover {
   color:  yellow;
+}
+
+#tweets-container {
+  padding: 5px 0;
+  width: 90%;
 }
 

@@ -52,7 +52,7 @@ $(document).ready(function () {
         </div> 
       </header>
       <div>
-        <p class="tweet-inner-border">
+        <p class="tweet-inner-border tweet-inner-flex">
           ${escape(tweet.content.text)}
         </p>
       </div>
