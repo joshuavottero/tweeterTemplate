@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- For Moble Users-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -53,7 +56,8 @@
     <!-- Page-specific (main) content here -->
     <main class="header-container">
       <section class="new-tweet">
-        <h2 class="new-tweet-h2">Compose Tweet</h2>
+        <h2 id="error-msg" class="tweet-error-msg no-error-flag"></h2>
+        <!-- element not needed? <h2 class="new-tweet-h2">Compose Tweet</h2>-->
         <form id="tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>

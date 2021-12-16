@@ -13,7 +13,6 @@
 form {
   display: flex;
   flex-direction: column;
-  background: yellow;
   margin: 0 20px;
 }
 
@@ -31,5 +30,17 @@ form textarea {
 
 .redText {
   color: red;
+}
+
+.tweet-error-msg {
+  margin: 0 20px;
+  text-align: center;
+  color: red;
+  border-style: solid;
+
+}
+
+.no-error-flag {
+  display: none;
 }
 

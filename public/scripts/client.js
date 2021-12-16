@@ -34,6 +34,11 @@ $(document).ready(function () {
 
   const createTweetElement = function(tweet) {
     daysAgo = timeago.format(tweet.created_at);
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    } 
     const $tweet = $(
       `
       <article class="tweets-article">
@@ -48,7 +53,7 @@ $(document).ready(function () {
       </header>
       <div>
         <p class="tweet-inner-border">
-          ${tweet.content.text}
+          ${escape(tweet.content.text)}
         </p>
       </div>
       <footer class="tweet-footer">
@@ -57,6 +62,7 @@ $(document).ready(function () {
       </footer>
     </article>
     `);
+   
     $("#tweets-container").append($tweet);
     };
 
@@ -67,8 +73,9 @@ $(document).ready(function () {
       });
   }
   const renderTweets = function(dataTweets) {
+    $("#tweets-container").empty();
     // loops through tweets
-    for (const item of dataTweets) {
+    for (const item of dataTweets.reverse()) {
       console.log(item);
       createTweetElement(item);
     }
@@ -86,18 +93,25 @@ $(document).ready(function () {
 
       //alert( "Handler for .submit() called. ");
       const formData = $(this).serialize();
+      $("#error-msg").slideUp(250).addClass("no-error-flag"); // add class to id "error-msg" to hide it
       console.log(formData);
       const tweetTextLength = $("#tweet-text").val().length;
       if (tweetTextLength > 140) {
-        alert("To Much Text");
+        $("#error-msg").html('<i class="fas fa-exclamation-triangle"></i> Too Long. Plz respct our arbitrary limit of 140 chars. #Kthxbye. <i class="fas fa-exclamation-triangle"></i>'); 
+        $("#error-msg").slideDown(250).removeClass("no-error-flag");
       }
       else if (tweetTextLength === "" || tweetTextLength === null || tweetTextLength === 0) {
-        alert("No Text Was Entered");
+        $("#error-msg").html('<i class="fas fa-exclamation-triangle"></i>Text area must not be empty<i class="fas fa-exclamation-triangle"></i>');  
+        $("#error-msg").slideDown(250).removeClass("no-error-flag");
       }
       else {
         $.ajax("/tweets", {data: formData, method: "POST"})
         .then(function (){
           console.log("tweet good", formData);
+          // code commented out below are wip
+          document.getElementById("tweet-text").value = "";
+          $('.counter').text(140);
+          loadTweets();
         });
       }
     });
