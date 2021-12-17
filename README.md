@@ -6,6 +6,14 @@ Tweeter is a simple, single-page Twitter clone that uses jQuery, HTML5 and plain
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
+# photos from assigment
+
+!["Some added to many chars"](https://github.com/joshuavottero/tweeterTemplate/blob/master/docs/Bad%20Post%202021-12-16%20at%2010.08.11%20PM.png?raw=true)
+
+!["a new tweet was made"](https://github.com/joshuavottero/tweeterTemplate/blob/master/docs/Smaller%20Screen%20With%20New%20Post%202021-12-16%20at%2010.08.45%20PM.png?raw=true)
+
+!["this web page has some responsive design if you incresse the window size"](https://github.com/joshuavottero/tweeterTemplate/blob/master/docs/Bigger%20Screen%20Display%202021-12-16%20at%2010.09.04%20PM.png?raw=true)
+
 # Note from student
 
 notes for any employers so they know what I did for sure
