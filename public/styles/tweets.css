@@ -4,6 +4,9 @@
   border-style: solid;
   margin-top: 30px;
 }
+.tweets-article:hover {
+  box-shadow: 10px 10px;
+}
 
 .tweets-header {
   display: flex;
@@ -15,16 +18,25 @@
   display: flex;
 }
 
-main > article {
-  width: auto;
-  background-color: red;
-}
-
 .tweets-img {
   margin: 20px;
-  width: 25%;
-  height: 25%;
-  height:auto;
+  height: 60px;
+  width: 60px;
+}
+
+.tweet-name {
+  white-space: nowrap;
+  font-size: 32px;
+}
+
+.tweet-handle-wrapper {
+  position: relative;
+}
+
+.tweet-handle {
+  position: absolute;
+  top: 5px;
+  right: 10px;  
 }
 
 .tweet-inner-border {
@@ -39,12 +51,36 @@ main > article {
   justify-content: space-between;
 }
 
+.tweet-icons {
+  padding: 0 5px;
+}
+
 .tweet-icons:hover {
   color:  yellow;
 }
 
-#tweets-container {
+.tweets-container {
   padding: 5px 0;
   width: 90%;
+}
+
+@media screen and (max-width: 501px) {
+  .tweet-name {
+    font-size: 16px;
+  }
+  .tweet-handle {
+    font-size: 16px;
+  }
+  
+}
+
+@media screen and (min-width: 500px) {
+  .tweet-name {
+    font-size: 25px;
+  }
+  .tweet-handle {
+    font-size: 25px;
+  }
+  
 }
 
